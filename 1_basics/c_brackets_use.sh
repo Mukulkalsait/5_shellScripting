@@ -29,7 +29,7 @@ else
   echo "Unknown User. ⚠ Please Contact Admin."
 fi
 
-# Y: 4. { Multi commands in same line; seperated with';' }
+# B: 4A. { Multi commands in same line; seperated with';' }
 
 {
   echo "Start_time:"
@@ -39,3 +39,14 @@ fi
   echo "|  Start_time: $(date)  |"
   echo "========================="
 }
+
+# B: 4B. {var Expansion} = Concad.
+
+variable_name1="kaiw"
+echo "my name is ${variable_name1}alya"
+
+# B: 4C. { Bress Expansion |  1..5  | a,b}
+
+echo {1..12}
+echo file{A..G}
+echo file{X,G,12,_unknown}
